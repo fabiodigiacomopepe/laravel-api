@@ -23,4 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route :: prefix('/v1') -> group(function() {
 
     Route :: get('/test-api', [ProjectController::class, 'testApi']);
+
+    Route :: get('/project-index', [ProjectController::class, 'projectIndex']);
 });
